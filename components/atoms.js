@@ -7,6 +7,7 @@ const { persistAtom } = recoilPersist();
 export const countState = atom({
   key: "count",
   default: 0,
+  effects_UNSTABLE: [persistAtom],
 });
 
 //userの値
